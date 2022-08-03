@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hun">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leszbikus Társkereső</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="about.html">Rólunk</a></li>
+                        <li><a href="https://veronikasarkany.github.io/HunTesztForum/">Fórum</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Kapcsolat</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Ti Történeteitek ...</h1>
+    </section>
+
+<!------Blog Page content------->
+
+<section class="blog-content">
+
+    <div class="row">
+        <div class="blog-left">
+            <img src="image/user2.png">
+            <h2>Ti Történeteitek ...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis sint deleniti!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ab facere repellendus eaque quaerat corrupti quia totam cum repellat. Ipsum nihil esse quod. Dolorem, minima.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, nemo, molestias iure perferendis laudantium voluptatem accusantium vel, id explicabo ipsa et unde labore ducimus fugiat totam adipisci! Expedita, consequuntur aspernatur.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore ad illo quasi excepturi hic. Praesentium nobis autem aspernatur quas reprehenderit doloremque dolores voluptatem quos, cumque modi voluptate, veritatis odit illo!</p>
+
+            <div class="comment-box">
+                <h3>Szólj hozzá</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Neved">
+                    <input type="email" placeholder="Email címed">
+                    <textarea  rows="5" placeholder="Üzeneted"></textarea>
+                    <button type="submit" class="hero-btn red-btn">ÜZENET ELKÜLDÉSE</button>
+                </form>
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="blog-right">
+            <h3>Hozzászólás kategóriák</h3>
+            <div>
+                <span>Hogyan bújtam elő?</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Hogyan mondjam el otthon?</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Mikor érdemes elmondani? </span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Egyedül nincs kedvem... (társaság kereső)</span>
+                <span>34</span>
+            </div>
+            
+        </div>
+    </div>
+
+</section>
+
+<!------Footer------->
+
+<section class="footer">
+
+    <h4>Rólunk</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Culpa maxime repellat illo.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-tumblr"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> Easy Tutorials </p>
+</section>
+
+<!------JavaScript for Toggle Menu------->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+    
+</body>
+</html>
